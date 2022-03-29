@@ -7,8 +7,10 @@ while True:
 		break
 	else:
 		chance = chance-1
-		if chance > 0:
-			print('please try again')
-		else:
+		if chance > 1:
+			print('wrong passord, you still have', chance, 'chances')
+		elif chance == 1:
+			print('wrong passord, you still have', chance, 'chance')
+		elif chance == 0:
 			print('account locked')
 			break
