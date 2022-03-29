@@ -1,6 +1,6 @@
 password = 'a123456'
-chance = 3
-while True:
+chance = 4
+while chance > 0:
 	answer = input('please enter your password: ')
 	if answer == password:
 		print('log in successful')
@@ -13,4 +13,3 @@ while True:
 			print('wrong passord, you still have', chance, 'chance')
 		elif chance == 0:
 			print('account locked')
-			break
